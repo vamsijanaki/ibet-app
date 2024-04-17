@@ -1,0 +1,258 @@
+.scrolling-wrapper {
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .container.ipb_filters_data_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+  .league-item {
+    width: 85px;
+    border: 2px solid transparent;
+    background-color: #17192c;
+    padding: 7px;
+    text-align: center;
+    border-radius: 8px;
+    font-family: "Nunito Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.league-item.selected {
+    background-color: #ff530061;
+    border : solid 2px #ff5300;
+}
+
+.league-item:hover {
+    background-color: #ff530061;
+    border : solid 2px #ff5300;
+}
+
+.league-item .name {
+    color: #fff;
+    font-size: 13px;
+}
+
+.league-icon img {
+    width: 35px;
+}
+
+.leagues-wrap .arrow {
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+div#right-arrow-container {
+    right: 0;
+    justify-content: start;
+}
+
+.leagues-wrap .arrow a {
+    background-color: #eee;
+    color: #fff;
+}
+
+.leagues-wrap .arrow a {
+    background-color: #ff530061;
+    color: #fff;
+    position: absolute;
+    width: 30px;
+    text-align: center;
+    border-radius: 100%;
+    height: 30px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.leagues-wrap .arrow a:hover {
+    background-color: #ff5300;
+}
+
+.gradient-overlay {
+    pointer-events: none; /* Allow clicks to pass through */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px; /* Or whatever size you want */
+    z-index: 2;
+  }
+  
+  .left-overlay {
+    left: 0;
+    background: linear-gradient(to right, #0c0e2c, transparent);
+  }
+  
+  .right-overlay {
+    right: 0;
+    background: linear-gradient(to left, #0c0e2c, transparent);
+  }
+
+  .ipb_games_skeleton span.placeholder.btn.col-4 {
+    color: currentColor !important;
+}
+
+.ipb_games_skeleton .placeholder.rounded-circle.bg-primary {
+    background-color: currentColor !important;
+}
+
+.ipb_games_skeleton .placeholder-glow {
+    text-align: center;
+}
+
+.ipb_games_skeleton .card-body {
+    background-color: #17192c;
+}
+
+.ipb_games_skeleton .card {
+    background-color: #181e4c;
+    border-radius: 10px;
+    border: 1px solid #2c2c39;
+    min-height: 330px;
+}
+
+
+.ipb_pill {
+    white-space: nowrap;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: #1f202d94;
+    font-size: 0.8125rem;
+    line-height: 1.1875rem;
+    font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    letter-spacing: 0.5px;
+    margin: 4px;
+    color: #fff;
+    width: auto;
+    transition: all 0.3s;
+
+}
+
+.ipb_pill:hover {
+    background: #fff;
+    color: #000;
+}
+
+.ipb_pill.selected {
+    color: #17192c;
+    background: #FFF;
+}
+
+.ipb_pill img {
+    width: 20px;
+    height: 20px;
+}
+
+.no-games {
+    height: 350px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.no-games img {
+    width: 130px;
+}
+
+.live-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #8dff8d;
+    border-radius: 50%;
+    animation: pulse 0.5s infinite alternate;
+    position: absolute;
+    right: 7px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+.ib_game-card-box {
+    background-color: #181e4c !important;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid #2c2c39;
+    font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.ib_card_header {
+    border: none;
+}
+
+
+h5.ib_card_title {
+    margin: 0;
+    font-size: 14px;
+}
+
+.ib_card_meta p {
+    font-size: 13px;
+    margin : 0;
+}
+
+.ib_player_image img {
+    background-color: #fff;
+    border-radius: 100%;
+    width: 90px;
+}
+
+.ib_card_stat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: #1111117d;
+    height: 40px;
+    font-size: 15px;
+}
+
+.ib_card_footer {
+    padding: 0;
+}
+
+.ib_card_button {
+    background-color: transparent;
+    border-color: #13172e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.ib_card_button:hover {
+    background-color: #fe5900;
+    border-color: #fe5900;
+}
+
+.loading-games {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 300px;
+}
+
+.loading-games img {
+    width: 200px;
+}
